@@ -1,0 +1,99 @@
+@import url('https://fonts.google.com/specimen/Barlow+Semi+Condensed' );
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size:13px;
+}
+
+body {
+    font-family:'Barlow Semi Condensed', sans-serif;
+    height:100vh;
+    display:grid;
+    place-items: center;
+    background:#282828;
+}
+
+.wrapper {
+    height:95vh;
+    width:80vw;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.comment {
+    margin:1rem;
+    padding:1.2rem;
+    border-radius:.5rem;
+    color: hsl(0, 0%, 81%);
+    display:flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 1rem #404040;
+}
+
+.user__info {
+    height:3rem;
+    width:100%;
+    display:flex;
+    align-items: center;
+
+    img {
+        height:2.5rem;
+        width:2.5rem;
+        border-radius:50%;
+        object-fit:cover;
+        margin-right:.8rem;
+        border:2px solid #aa00aa;
+    }
+
+    .name {
+        font-weight:500;
+    }
+
+    .role {
+        opacity:50%;
+    }
+}
+
+.comment__subject {
+    margin:1rem 0;
+    font-weight:600;
+}
+
+.comment__content {
+    opacity:70%;
+}
+
+.first {
+    grid-column:1 / 3;
+    grid-row:1 / 2;
+    background:hsl(263, 55%, 52%);
+}
+
+.second {
+    grid-row: 1 / 2;
+    grid-column:3 / 4;
+    background: hsl(217, 19%, 35%);
+}
+
+.third {
+    grid-column:4 / 5;
+    grid-row:1 / 3;
+    background: hsl(0, 0, 100%);
+    color:hsl(217, 19%, 35%);
+}
+
+.fourth {
+    grid-column:1 / 2;
+    grid-row:2 / 3;
+    background:hsl(0, 0, 100%);
+    color:hsl(217, 19%, 35%);
+}
+
+.last {
+    grid-column:2 / 4;
+    grid-row: 2 / 3;
+    background: hsl(219, 29%, 14%);
+}

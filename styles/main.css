@@ -1,0 +1,135 @@
+@import url("https://fonts.google.com/specimen/Barlow+Semi+Condensed");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 13px;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #282828;
+}
+
+.wrapper {
+  height: 95vh;
+  width: 80vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.comment {
+  margin: 1rem;
+  padding: 1.2rem;
+  border-radius: .5rem;
+  color: #cfcfcf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 1px 1px 1rem #404040;
+          box-shadow: 1px 1px 1rem #404040;
+}
+
+.user__info {
+  height: 3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user__info img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: .8rem;
+  border: 2px solid #aa00aa;
+}
+
+.user__info .name {
+  font-weight: 500;
+}
+
+.user__info .role {
+  opacity: 50%;
+}
+
+.comment__subject {
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.comment__content {
+  opacity: 70%;
+}
+
+.first {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  background: #7541c8;
+}
+
+.second {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  background: #48556a;
+}
+
+.third {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  background: white;
+  color: #48556a;
+}
+
+.fourth {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  background: white;
+  color: #48556a;
+}
+
+.last {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  background: #19212e;
+}
+/*# sourceMappingURL=main.css.map */
